@@ -63,7 +63,3 @@ for z in range(1,10):
     planilha['j{}'.format(z+1)] = preço3.text
     planilha['K{}'.format(z+1)] = tamanho3.text
     arquivo.save("C:\\Users\\Up Agency 2\\oneDrive\\Documentos\\drive\\meuarquivo5.xlsx")
-
-
-
-
