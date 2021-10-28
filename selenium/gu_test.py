@@ -30,12 +30,12 @@ for n in range(1,10):
     planilha['A{}'.format(n+1)] = nome.text
     planilha['B{}'.format(n+1)] = preço.text
     planilha['C{}'.format(n+1)] = tamanho.text
-    arquivo.save("C:\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado1.xlsx")
+    arquivo.save("C:\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado2.xlsx")
     
       
 time.sleep(1)
 categoria2 = driver.find_element_by_xpath('//*[@id="conteudo"]/div/div/section/section/div[1]/ul/li[3]/label') 
-planilha['E1'] = categoria2.text
+planilha['E1'] = categoria2.text 
 # categoria2.click()
  
 
@@ -47,7 +47,7 @@ for x in range(1,10):
     planilha['E{}'.format(x+1)] = nome2.text
     planilha['F{}'.format(x+1)] = preço2.text
     planilha['G{}'.format(x+1)] = tamanho2.text
-    arquivo.save("\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado1.xlsx")
+    arquivo.save("\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado2.xlsx")
 
 
 
@@ -62,6 +62,6 @@ for z in range(1,10):
     planilha['I{}'.format(z+1)] = nome3.text    
     planilha['j{}'.format(z+1)] = preço3.text
     planilha['K{}'.format(z+1)] = tamanho3.text
-    arquivo.save("\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado1.xlsx")
+    arquivo.save("\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado2.xlsx")
     
 

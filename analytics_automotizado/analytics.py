@@ -22,8 +22,9 @@ senha.send_keys('@VoaUpagency2020!')
 proximo2 = driver.find_element_by_xpath('//*[@id="passwordNext"]/div/button/span')
 proximo2.click()
 time.sleep(2)
-pagina1 = driver.find_element_by_xpath('//*[@id="ID-explorer-table-dataTable-key-0-0"]/div/div[1]')
+pagina1 = driver.find_element_by_xpath('//*[@id="ID-rowTable"]/tbody/tr[1]/td[4]/div')
 print(pagina1)
+
 
 
 # for n in range(0,10):

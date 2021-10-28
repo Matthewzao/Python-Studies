@@ -11,8 +11,8 @@
 
 import requests
 
-with open('pato.jpg', 'wb') as imagem:
-  resposta = requests.get("https://i.imgur.com/EyDTdcy.jpg", stream=True)
+with open('imagem_baixada.jpg', 'wb') as imagem:
+  resposta = requests.get("https://static3.tcdn.com.br/img/img_prod/460977/pre_venda_action_figure_miles_morales_homem_aranha_no_aranhaverso_spider_man_into_the_spider_verse_e_55999_1_20201211173135.png", stream=True)
 
   if not resposta.ok:
     print("Ocorreu um erro, status:" , resposta.status_code)

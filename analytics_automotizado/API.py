@@ -10,24 +10,18 @@ from requests.models import HTTPBasicAuth
                                     #  POST
 token = '5b7e6001408c9e949cd547f014ffaf9a'
 key = 'ec74c389ef4a070869602a5c4b1f1fae'
-url_site = 'http://www.yaraoficial.com.br/api/variacoes/adicionar'
+url_site = 'http://www.yaraoficial.com.br/api/categorias/buscar/todos'
 
-cor = {
 
-    "pai_id": "0",
-
-    "ativo": "1",
-
-    "nome": "Nome da Variação"
-
-}
-
-requisicao = requests.post(url=url_site,auth=HTTPBasicAuth(token,key),json=cor)
+requisicao = requests.post(url=url_site,auth=HTTPBasicAuth(token,key))
 res = requisicao.json()
+res1 = res['ok']['nome']
 print(res)
+print(res1)
 
 
-                       
+
+
                                          #   PATCH
 # informacao = '{"Nome": "Beatriz", "Sobrenome": "Santos", "idade": "20"}'
 # mudanca = requests.patch('https://teste-67f75-default-rtdb.firebaseio.com/-Mn6FggheX8G27sz6aQu.json',data=informacao)
