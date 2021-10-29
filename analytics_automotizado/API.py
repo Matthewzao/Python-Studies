@@ -8,16 +8,15 @@ from requests.models import HTTPBasicAuth
 # print(nome.json())
 
                                     #  POST
-token = '5b7e6001408c9e949cd547f014ffaf9a'
-key = 'ec74c389ef4a070869602a5c4b1f1fae'
-url_site = 'http://www.yaraoficial.com.br/api/categorias/buscar/todos'
+token = '891e5975d4727afd9c8e7da15e5e7ee2'
+key = 'c4c5cbc7fd816ebd7a67542d7e3ee767'
+url_site = 'https://www.amarplus.com.br//api/variacoes/buscar/todos'
 
 
 requisicao = requests.post(url=url_site,auth=HTTPBasicAuth(token,key))
 res = requisicao.json()
-res1 = res['ok']['nome']
 print(res)
-print(res1)
+
 
 
 
