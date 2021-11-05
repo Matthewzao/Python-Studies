@@ -17,14 +17,13 @@ login.send_keys('suporte@upagencybrasil.com.br')
 proximo = driver.find_element_by_xpath('//*[@id="identifierNext"]/div/button/span')
 proximo.click()
 time.sleep(2)
-senha = driver.find_element_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input') 
+senha = driver.find_element_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input')
 senha.send_keys('@VoaUpagency2020!')
 proximo2 = driver.find_element_by_xpath('//*[@id="passwordNext"]/div/button/span')
 proximo2.click()
 time.sleep(2)
-pagina1 = driver.find_element_by_xpath('//*[@id="ID-rowTable"]/tbody/tr[1]/td[4]/div')
-print(pagina1)
-
+infomracao = driver.find_element_by_xpath('//*[@id="ID-rowTable"]/tbody/tr[1]/td[3]')
+print(infomracao)
 
 
 # for n in range(0,10):
