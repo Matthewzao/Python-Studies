@@ -35,7 +35,3 @@ for r in range(2, rows+1):
     }
     addDesconto = requests.post(url=url_site, auth=HTTPBasicAuth(token,key),json=desconto)
     print(addDesconto.json())
-
-    
-
-

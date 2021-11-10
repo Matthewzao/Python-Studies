@@ -30,7 +30,7 @@ for n in range(1,10):
     planilha['A{}'.format(n+1)] = nome.text
     planilha['B{}'.format(n+1)] = preço.text
     planilha['C{}'.format(n+1)] = tamanho.text
-    arquivo.save("C:\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado2.xlsx")
+    arquivo.save("C:\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado3.xlsx")
     
       
 time.sleep(1)
