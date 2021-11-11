@@ -11,7 +11,7 @@ import openpyxl
 from openpyxl import load_workbook
 
 # tratamento planilha
-wb = load_workbook('C:\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\SUBIR RUSH\\RUSH_RUSH_1.xlsx')
+wb = load_workbook('C:\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\SUBIR RUSH\\suellen.xlsx')
 sheet = wb.active
 rows = sheet.max_row
 columns = sheet.max_column

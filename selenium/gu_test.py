@@ -11,7 +11,7 @@ planilha = arquivo.worksheets[0]
 
 driver = webdriver.Chrome(chromedrive)
 driver.maximize_window()
-driver.get("https://www.atheleco.com.br/")
+driver.get("https://www.atheleco.com.br")
 
 clicar = driver.find_element_by_xpath('//*[@id="container"]/section[1]/div/button')
 clicar.click()
@@ -27,12 +27,7 @@ for n in range(1,10):
     nome = driver.find_element_by_xpath('//*[@id="conteudo"]/div/div/section/div[1]/div/ul/li[{}]/div/section[1]/a/div[3]'.format(n))
     preço = driver.find_element_by_xpath('//*[@id="conteudo"]/div/div/section/div[1]/div/ul/li[{}]/div/section[2]/a/div[1]/div[1]/ins'.format(n))
     tamanho = driver.find_element_by_xpath('//*[@id="conteudo"]/div/div/section/div[1]/div/ul/li[{}]/div/section[3]/div/ul'.format(n))
-    planilha['A{}'.format(n+1)] = nome.text
-    planilha['B{}'.format(n+1)] = preço.text
-    planilha['C{}'.format(n+1)] = tamanho.text
-    arquivo.save("C:\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado3.xlsx")
-    
-      
+   
 time.sleep(1)
 categoria2 = driver.find_element_by_xpath('//*[@id="conteudo"]/div/div/section/section/div[1]/ul/li[3]/label') 
 planilha['E1'] = categoria2.text 
@@ -47,7 +42,7 @@ for x in range(1,10):
     planilha['E{}'.format(x+1)] = nome2.text
     planilha['F{}'.format(x+1)] = preço2.text
     planilha['G{}'.format(x+1)] = tamanho2.text
-    arquivo.save("\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado2.xlsx")
+    arquivo.save("\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado10.xlsx")
 
 
 
@@ -62,6 +57,6 @@ for z in range(1,10):
     planilha['I{}'.format(z+1)] = nome3.text    
     planilha['j{}'.format(z+1)] = preço3.text
     planilha['K{}'.format(z+1)] = tamanho3.text
-    arquivo.save("\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado2.xlsx")
+    arquivo.save("\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\excel with python\\excel_automatizado10.xlsx")
     
 

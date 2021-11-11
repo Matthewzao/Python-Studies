@@ -27,6 +27,8 @@ vestido = driver.find_element_by_xpath('//*[@id="artigo"]/section[5]/div/table/t
 vestido.click()
 loja = driver.find_element_by_xpath('//*[@id="artigo"]/section[5]/div/table/tbody/tr[1]/td[4]/div/div[2]/a[6]')
 loja.click()
+descricao = driver.find_element_by_xpath('//*[@id="frm-produto"]/div/div[3]/section[1]/h2/span')
+print(descricao.text)
 
 
 

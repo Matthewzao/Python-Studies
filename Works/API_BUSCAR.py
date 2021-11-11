@@ -8,14 +8,15 @@ from requests.models import HTTPBasicAuth
 # print(nome.json())
 
                                     #  POST
-token = '3481eacd4bfdc3c86d5c4d136d0a496b'   
-key = 'ab1ff55fb6b60d280dbb7bd94c96dd4e'
-url_site = 'https://www.estiloplushe.com.br//api/variacoes/buscar/todos'
+token = '4423f2d8922cad3e3ec5a8c342992c04'   
+key = '1582c527884345cd8153fda9b11c7356'
+url_site = 'https://www.rushrush.com.br//api/variacoes/buscar/todos'
 
 
 requisicao = requests.post(url=url_site,auth=HTTPBasicAuth(token,key))
 res = requisicao.json()
 print(res)
+
 
 
 
@@ -35,3 +36,7 @@ print(res)
 
         # como especificar a informação que quero pegar
 # cotacao_dolar = nome['USDBRL'] ['bid']
+
+
+
+
