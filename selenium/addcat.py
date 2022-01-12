@@ -23,8 +23,8 @@ driver.find_element_by_xpath('//*[@id="UsuarioSenha"]').send_keys('@VoaUpagency2
 driver.find_element_by_xpath('//*[@id="frm-login"]/div[4]/input').click()
 time.sleep(0.5)
 
-for i in range(169, rows+1): 
-    ref = sheet.cell(row=i, column=2).value
+for i in range(1, rows+1): 
+  ref = sheet.cell(row=i, column=2).value
     preco = sheet.cell(row=i, column=9).value
     driver.get('https://www.lboficial.com.br/admin/produtos')  
     time.sleep(0.5)
@@ -36,20 +36,8 @@ for i in range(169, rows+1):
     driver.find_element_by_xpath('//*[@id="artigo"]/section[5]/div/table/tbody/tr[1]/td[4]/div/div[2]/a[1]').click()
     time.sleep(0.5)
 
-    # driver.find_element_by_xpath('//*[@id="form"]/div/div[2]/div[1]/section[1]/ul/li/a').click()
-    # time.sleep(1)
-    # driver.find_element_by_xpath('//*[@id="form"]/fieldset/div/ul[1]/li').click()
-    # driver.find_element_by_xpath('//*[@id="btn-gravar"]').click()
-    # time.sleep(1)
-
-
-    driver.find_element_by_xpath('//*[@id="artigo"]/div/section/section[2]/div[3]/a').click()
-    driver.find_element_by_xpath('//*[@id="artigo"]/section[3]/div/table/tbody/tr/td[1]/div/div[1]').click()
-    driver.find_element_by_xpath('//*[@id="artigo"]/section[3]/div/table/tbody/tr/td[1]/div/div[2]/a[1]').click()
-    time.sleep(0.5)
-    driver.find_element_by_xpath('//*[@id="ProdutoDescontoDescontoValor"]').clear()
-    desconto_valor = ("%.2f" % int(preco))
-    driver.find_element_by_xpath('//*[@id="ProdutoDescontoDescontoValor"]').send_keys(desconto_valor)
-    driver.find_element_by_xpath('//*[@id="form"]/div/div[1]/div[2]/div/div/div[1]/div[2]/div[1]/label/span').click()
+    driver.find_element_by_xpath('//*[@id="form"]/div/div[2]/div[1]/section[1]/ul/li/a').click()
+    time.sleep(1)
+    driver.find_element_by_xpath('//*[@id="form"]/fieldset/div/ul[1]/li').click()
     driver.find_element_by_xpath('//*[@id="btn-gravar"]').click()
     time.sleep(1)

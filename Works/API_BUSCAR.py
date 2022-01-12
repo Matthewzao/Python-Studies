@@ -8,18 +8,19 @@ from requests.models import HTTPBasicAuth
 # print(nome.json())
 
                                     #  POST
-token = '4423f2d8922cad3e3ec5a8c342992c04'   
-key = '1582c527884345cd8153fda9b11c7356'
-url_site = 'https://www.rushrush.com.br//api/variacoes/buscar/todos'
+token = '90f3237005640b0688e4f5fb3d8e9c52'   
+key = '388ecbdcc8e26e5dff55390b87f75be3'
+url_site = "https://idrissidress.braavo.com.br/api/variacoes/buscar/todos"
 
 
 requisicao = requests.post(url=url_site,auth=HTTPBasicAuth(token,key))
 res = requisicao.json()
 print(res)
 
+        
 
 
-
+        
 
 
                                          #   PATCH

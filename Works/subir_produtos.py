@@ -11,7 +11,7 @@ import openpyxl
 from openpyxl import load_workbook
 
 # tratamento planilha
-wb = load_workbook('C:\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\SUBIR RUSH\\suellen.xlsx')
+wb = load_workbook('C:\\Users\\Up Agency 2\\OneDrive\\Área de Trabalho\\RUSH SUBIR NOVO\\rush subir.xlsx')
 sheet = wb.active
 rows = sheet.max_row
 columns = sheet.max_column
@@ -87,7 +87,7 @@ for i in range(0, len(names)):
 
             addSkuJson = addSku.json()
             time.sleep(1)
-            print(addSkuJson)
+            print(addSkuJson) 
             print('sku adicionado')
     print("produto add")
-print("finished")
+print("finished")  

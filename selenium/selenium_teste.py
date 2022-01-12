@@ -18,7 +18,7 @@ botao2.click()
 driver.find_element_by_xpath('/html/body/div[3]/div[5]/div[1]/div[2]/h1')
 achar = driver.find_element_by_xpath('/html/body/div[3]/div[5]/div[1]/div[2]/h1')
 print(achar.text)
-
+  
 
 
 
